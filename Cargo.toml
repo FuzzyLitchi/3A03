@@ -1,0 +1,12 @@
+[package]
+name = "fuzz_kernel"
+version = "0.1.0"
+authors = ["Polly Nielsen Boutet-Livoff <pollyboutet@gmail.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
